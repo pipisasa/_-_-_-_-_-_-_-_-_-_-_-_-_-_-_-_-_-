@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1337</title>
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+</head>
+<body>
+  <script>
+    
+    // С начала напишите в консоли:
+    //// npm install
+    
+    // затем запустите json-server:
+    //// json-server --watch ./Document.json
+    
+    let cipher = {};
+    $.ajax('http://localhost:3000/cipher').done(function(data){
+      cipher = data;
+
+      // напишите сюда ключ. К примеру:
+      // console.log(cipher.k.e.y.s.result)
+      
+      console.log(cipher.k.e.y.s.result);
+    })
+  </script>
+</body>
+</html>
